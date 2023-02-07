@@ -81,7 +81,7 @@ input, select, textarea {
 
 	body {
 		background: #252122;
-		background-image: url("images/bg02.png");
+		
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -178,6 +178,7 @@ input, select, textarea {
 		margin: 0 auto;
 		max-width: 100%;
 		width: 70em;
+		
 	}
 
 		@media screen and (max-width: 1680px) {
@@ -1920,68 +1921,37 @@ input, select, textarea {
 			}
 
 				ul.social li a:before {
-					color: #fff;
+					color: #0368a3;
 					font-size: 2em;
 					line-height: 1.5em;
 				}
 
-				ul.social li a.fa-facebook {
-					background: #3c5a98;
+			
+				ul.social li a.fa-instagram {
+					background: #ffffff;
 				}
 
-					ul.social li a.fa-facebook:hover {
-						background: #4c6aa8;
+					ul.social li a.fa-instagram:hover {
+						background: #b7c6e2;
 					}
-
-				ul.social li a.fa-twitter {
-					background: #2daae4;
-				}
-
-					ul.social li a.fa-twitter:hover {
-						background: #3dbaf4;
+					ul.social li a.fa-bootstrap {
+						background: #ffffff;
 					}
-
-				ul.social li a.fa-dribbble {
-					background: #c4376b;
-				}
-
-					ul.social li a.fa-dribbble:hover {
-						background: #d4477b;
-					}
-
-				ul.social li a.fa-linkedin {
-					background: #006599;
-				}
-
-					ul.social li a.fa-linkedin:hover {
-						background: #1075a9;
-					}
-
-				ul.social li a.fa-tumblr {
-					background: #2b4661;
-				}
-
-					ul.social li a.fa-tumblr:hover {
-						background: #3b5671;
-					}
-
-				ul.social li a.fa-google-plus {
-					background: #da2713;
-				}
-
-					ul.social li a.fa-google-plus:hover {
-						background: #ea3723;
-					}
+	
+						ul.social li a.fa-bootstrap:hover {
+							background: #b7c6e2;
+						}
+			
 
 /* Icons */
 
-	.icon {
+	.social {
 		text-decoration: none;
 		position: relative;
 		text-decoration: none;
 	}
 
-		.icon:before {
+		.social:before {
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
 			display: inline-block;
@@ -1994,7 +1964,7 @@ input, select, textarea {
 			font-weight: 400;
 		}
 
-		.icon.solid:before {
+		.social.solid:before {
 			font-weight: 900;
 		}
 
@@ -2010,10 +1980,10 @@ input, select, textarea {
 			display: none;
 		}
 
-		.icon.featured {
+		.social.featured {
 			position: relative;
 			display: inline-block;
-			background-color: #d52349;
+			background-color: #f1f1f1;
 			width: 9em;
 			padding: 1.75em 0 0.75em 0;
 			border-top-left-radius: 5px;
@@ -2028,22 +1998,22 @@ input, select, textarea {
 				color: #fff;
 			}
 
-			.icon.featured:after {
+			.social.featured:after {
 				content: '';
 				position: absolute;
 				bottom: -1.95em;
 				left: 0;
-				border-top: solid 2em #d52349;
+				border-top: solid 2em #ffffff;
 				border-left: solid 4.5em transparent;
 				border-right: solid 4.5em transparent;
 			}
 
 			.icon.featured.alt {
-				background-color: #252122;
+				background-color: #fcfcfc;
 			}
 
 				.icon.featured.alt:after {
-					border-top-color: #252122;
+					border-top-color: #ffffff;
 				}
 
 			.icon.featured.alt2 {
@@ -2064,7 +2034,7 @@ input, select, textarea {
 
 	#header {
 		position: relative;
-		background: radial-gradient(#9ac2f0, #fcfcfc);
+		background: radial-gradient(#ffffff, #ffffff);
 		border-bottom: solid 1px #ccc;
 		padding: 5em 0 4em 0;
 		text-align: center;
@@ -2077,6 +2047,8 @@ input, select, textarea {
 			letter-spacing: -0.035em;
 			line-height: 1;
 		}
+
+		
 
 /* Nav */
 
@@ -2111,11 +2083,11 @@ input, select, textarea {
 				}
 
 				#nav > ul > li:hover > a, #nav > ul > li.active > a {
-					background: #f3f3f3;
+					background: #dbe2f0;;
 				}
 
 				#nav > ul > li.current > a {
-					background: #2361d5;
+					background: #0657f0;
 					color: #fff !important;
 					font-weight: 700;
 				}
@@ -2173,7 +2145,7 @@ input, select, textarea {
 	#banner {
 		/* background: #CCE8F4 url("../../images/pic01.jpg"); */
 		
-		background: radial-gradient(#4f93e0, #f3f4f5);
+		background: radial-gradient(#ffffff, #ffffff);
 		background-position: center center;
 		background-size: auto 100%;
 		background-repeat: no-repeat;
@@ -2191,14 +2163,14 @@ input, select, textarea {
 		}
 
 			#banner header h2 {
-				color: #97dee7;
+				color: #000000;
 				font-weight: 700;
 				font-size: 2.5em;
 				margin: 0 0 0.65em 0;
 			}
 
 			#banner header p {
-				color: #f8f8f8;
+				color: #000000;
 				padding: 0;
 				font-style: normal;
 				margin: 0;
@@ -2300,7 +2272,7 @@ input, select, textarea {
 			top: 0;
 			left: 0;
 			width: 100%;
-			background: url("images/bg01.png");
+			background: url("");
 			background-size: 100% 100%;
 			z-index: 0;
 			opacity: 0.5;
