@@ -1572,7 +1572,8 @@ input, select, textarea {
 		border-bottom: solid 1px #ccc;
 		padding: 2.75em 1.75em 2.75em 1.75em;
 	}
-
+	
+	
 		.box .image.featured {
 			position: relative;
 			width: auto;
@@ -1599,6 +1600,11 @@ input, select, textarea {
 		.box footer ul.actions {
 			margin-bottom: 0;
 		}
+		
+		.box .image.featured:hover {
+			transform: scale(1.1);
+			transition: transform 0.3s ease-in-out;
+		  }
 
 /* Button */
 
@@ -1778,19 +1784,10 @@ input, select, textarea {
 
 /* Contact */
 
-	ul.contact {
-		list-style: none;
-		padding-left: 0;
-	}
-
-		ul.contact li {
-			position: relative;
-			border-top: solid 1px #ddd;
-			padding: 1.3em 0 1.3em 7em;
-		}
+	
 
 			ul.contact li h3 {
-				position: absolute;
+				position: center;
 				left: 0;
 				top: 1.3em;
 				font-size: 1.1em;
@@ -1941,6 +1938,7 @@ input, select, textarea {
 						ul.social li a.fa-bootstrap:hover {
 							background: #b7c6e2;
 						}
+						
 			
 
 /* Icons */
@@ -2875,6 +2873,7 @@ input, select, textarea {
 
 			#footer {
 				padding: 40px 0 20px 0;
+				
 			}
 
 	}
