@@ -1,5 +1,6 @@
 const search = document.querySelector(".search-box input"),
       images = document.querySelectorAll(".image-box");
+      
 
 search.addEventListener("keyup", e =>{
     if(e.key == "Enter"){
@@ -21,3 +22,5 @@ search.addEventListener("keyup", () =>{
         image.style.display = "block";
     })
 })
+
+

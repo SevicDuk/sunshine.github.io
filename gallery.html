@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="gallery.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
 		<link rel="icon" type="slike/favicon.ico" href="slike/favicon.ico">
+
 	</head>
 	<body class="homepage is-preload">
 		<div id="page-wrapper">
@@ -15,6 +16,7 @@
 				<section id="header">
 
 					<!-- Logo -->
+          <img class="logo" src="slike/logog.png" alt="logo">
 						<U><h1><a href="index.html" class="lk">Sunshine Apartman - Vrnjačka Banja</a></h1></U>
 
 					<!-- Nav -->
@@ -75,14 +77,25 @@
 
     
 </head>
-<body>
-    <div class="container">
+<body>  <div class="container">
+    
         <div class="search-box">
             <i class="bx bx-search"></i>
-            <input type="text" placeholder="Unesite deo stana">
-        </div>
+            <input type="text" id="mesto-input" class="autocomplete-input" placeholder="Unesite deo stana koji želite videti !">
+          <!-- <ul class="autocomplete-list" id="mesto-input">
+            <li>Zgrada</li>
+            <li>Dnevna Soba</li>
+            <li>Spavaca Soba</li>
+            <li>Kuhinja</li>
+            <li>Kupatilo</li>
+            <li>Ostalo</li>
+           </ul>-->
 
-        <div class="images">
+        </div>
+     
+
+        <div class="images" id="myImg">
+          
             <div class="image-box" data-name="dnevna soba">
                 <img src="slike/dnevnasmutna.jpg" alt="">
                 <h6>Dnevna soba</h6>
@@ -99,38 +112,87 @@
                 <img src="slike/dekor.jpg" alt="">
                 <h6>Dnevna soba</h6>
             </div>
-            <div class="image-box" data-name="kuhinja">
-                <img src="slike/kuhinja.jpg" alt="">
-                <h6>kuhinja</h6>
-            </div>
-            <div class="image-box" data-name="ostalo">
-                <img src="slike/parking mesto.jpg" alt="">
-                <h6>Parking</h6>
-            </div>
-            <div class="image-box" data-name="kuhinja">
-                <img src="slike/zgrada.jpg" alt="">
-                <h6>Kuhinja</h6>
-            </div>
-            <div class="image-box" data-name="ostalo">
-                <img src="slike/wc1ceo.jpg" alt="">
-                <h6>ostalo</h6>
-            </div>
-            <div class="image-box" data-name="ostalo">
+            <div class="image-box" data-name="spavaca soba">
                 <img src="slike/spavacasoba1.jpg" alt="">
-                <h6>ostalo</h6>
-            </div>
-            <div class="image-box" data-name="ostalo">
-                <img src="slike/spavacasoba2.jpg" alt="">
-                <h6>ostalo</h6>
+                <h6>Spavaca soba</h6>
             </div>
             <div class="image-box" data-name="spavaca soba">
                 <img src="slike/spavacasoba3.jpg" alt="">
-                <h6>spavaca soba</h6>
+                <h6>Spavaca soba</h6>
+            </div>
+            <div class="image-box" data-name="wc">
+                <img src="slike/wc1ceo.jpg" alt="">
+                <h6>WC</h6>
+            </div>
+            <div class="image-box" data-name="wc">
+                <img src="slike/wc.jpg" alt="">
+                <h6>WC</h6>
+            </div>
+            <div class="image-box" data-name="terasa">
+                <img src="slike/terasamrak.jpg" alt="">
+                <h6>Terasa</h6>
+            </div>
+            <div class="image-box" data-name="ostalo">
+                <img src="slike/zgrada.jpg" alt="">
+                <h6>Zgrada</h6>
+            </div>
+            <div class="image-box" data-name="spavaca soba">
+                <img src="slike/kuhinja.jpg" alt="">
+                <h6>Kuhinja</h6>
             </div>
             <div class="image-box" data-name="spavaca soba">
                 <img src="slike/logo.jpg" alt="">
-                <h6>spavaca soba</h6>
+                <h6>Ostalo</h6>
             </div>
+            <div class="image-box1" data-name="spavaca soba">
+              <img src="slike/logo.jpg" alt="">
+              <h6>spavaca soba</h6>
+          </div>
+          <div class="image-box1" data-name="spavaca soba">
+            <img src="slike/logo.jpg" alt="">
+            <h6>spavaca soba</h6>
+        </div>
+        <div class="image-box1" data-name="spavaca soba">
+          <img src="slike/logo.jpg" alt="">
+          <h6>spavaca soba</h6>
+      </div>
+      <div class="image-box1" data-name="spavaca soba">
+        <img src="slike/logo.jpg" alt="">
+        <h6>spavaca soba</h6>
+    </div>
+    <div class="image-box1" data-name="spavaca soba">
+      <img src="slike/logo.jpg" alt="">
+      <h6>spavaca soba</h6>
+  </div>
+  <div class="image-box1" data-name="spavaca soba">
+    <img src="slike/logo.jpg" alt="">
+    <h6>spavaca soba</h6>
+</div>
+<div class="image-box1" data-name="spavaca soba">
+  <img src="slike/logo.jpg" alt="">
+  <h6>spavaca soba</h6>
+</div>
+<div class="image-box1" data-name="spavaca soba">
+  <img src="slike/logo.jpg" alt="">
+  <h6>spavaca soba</h6>
+</div>
+<div class="image-box1" data-name="spavaca soba">
+  <img src="slike/logo.jpg" alt="">
+  <h6>spavaca soba</h6>
+</div>
+<div class="image-box1" data-name="spavaca soba">
+  <img src="slike/logo.jpg" alt="">
+  <h6>spavaca soba</h6>
+</div>
+<div class="image-box1" data-name="spavaca soba">
+  <img src="slike/logo.jpg" alt="">
+  <h6>spavaca soba</h6>
+</div>
+<div class="image-box1" data-name="spavaca soba">
+  <img src="slike/logo.jpg" alt="">
+  <h6>spavaca soba</h6>
+</div>
+
         </div>
     </div>
 
